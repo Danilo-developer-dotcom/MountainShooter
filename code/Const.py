@@ -10,6 +10,7 @@ C_CYAN = (0, 128, 128)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 ENTITY_SPEED = {
     'Level1Bg0' : 0,
@@ -19,6 +20,11 @@ ENTITY_SPEED = {
     'Level1Bg4' : 4,
     'Level1Bg5' : 4,
     'Level1Bg6' : 6,
+    'Level2Bg0': 1,
+    'Level2Bg1': 2,
+    'Level2Bg2': 3,
+    'Level2Bg3': 4,
+    'Level2Bg4': 5,
     'Player1' : 3,
     'Player1Shot': 5,
     'Player2' : 3,
@@ -30,21 +36,26 @@ ENTITY_SPEED = {
 }
 
 ENTITY_HEALTH = {
-    'Level1Bg0' : 1,
-    'Level1Bg1' : 1,
-    'Level1Bg2' : 1,
-    'Level1Bg3' : 1,
-    'Level1Bg4' : 1,
-    'Level1Bg5' : 1,
-    'Level1Bg6' : 1,
-    'Player1' : 300,
-    'Player1Shot' : 1,
-    'Player2' : 300,
-    'Player2Shot' : 1,
-    'Enemy1' : 50,
-    'Enemy1Shot' : 1,
-    'Enemy2' : 60,
-    'Enemy2Shot' : 1,
+    'Level1Bg0': 1,
+    'Level1Bg1': 1,
+    'Level1Bg2': 1,
+    'Level1Bg3': 1,
+    'Level1Bg4': 1,
+    'Level1Bg5': 1,
+    'Level1Bg6': 1,
+    'Level2Bg0': 1,
+    'Level2Bg1': 1,
+    'Level2Bg2': 1,
+    'Level2Bg3': 1,
+    'Level2Bg4': 1,
+    'Player1': 150,
+    'Player1Shot': 1,
+    'Player2': 150,
+    'Player2Shot': 1,
+    'Enemy1': 50,
+    'Enemy1Shot': 1,
+    'Enemy2': 60,
+    'Enemy2Shot': 1,
 }
 
 ENTITY_DAMAGE = {
@@ -55,6 +66,11 @@ ENTITY_DAMAGE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -73,6 +89,11 @@ ENTITY_SCORE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -117,7 +138,11 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_KP0,
 
 # S
 
-SPAWN_TIME = 4000
+SPAWN_TIME = 1000
+
+# T
+TIMEOUT_STEP = 100 # 100ms
+TIMEOUT_LEVEL = 20000 # 20s
 
 # W
 
